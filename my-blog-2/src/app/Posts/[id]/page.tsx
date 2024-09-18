@@ -1,4 +1,3 @@
-// src/app/Posts/[id]/page.tsx
 import React from 'react';
 import { getPostId } from '../../../Service/Service';
 import Link from 'next/link';
@@ -22,14 +21,13 @@ const BlogPostPage = async ({ params }: { params: { id: string } }) => {
             className="cursor-pointer transition duration-300 hover:scale-110"
           />
         </Link>
-        <span className="text-lg font-medium text-blue-600 hover:underline">
-          Back to Home
-        </span>
       </div>
 
       <div className="bg-white shadow-lg p-6 rounded-lg max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-6 text-center">{post.title}</h1>
-        <p className="text-lg text-gray-700 leading-relaxed">
+        <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">
+          {post.title}
+        </h1>
+        <p className="text-lg sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
           {post.content}
         </p>
       </div>

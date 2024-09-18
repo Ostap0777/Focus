@@ -1,5 +1,3 @@
-// app/page.tsx
-
 import React from 'react';
 import Link from 'next/link';
 import { getAllPosts } from '../Service/Service';
@@ -13,7 +11,6 @@ const HomePage = async () => {
     posts = Object.keys(data).map(key => ({
       id: key,
       title: data[key].title,
-      excerpt: data[key].excerpt,
 		description: data[key].description
     }));
   } catch (error) {
@@ -30,13 +27,17 @@ const HomePage = async () => {
               key={post.id}
               className="bg-white shadow-md shadow-black p-4 rounded-lg transition duration-300 ease-in-out transform hover:shadow-lg hover:shadow-black hover:scale-105"
             >
-              <Link href={`/Posts/${post.id}`}>
-                <span className="text-2xl font-medium text-black hover:text-blue-800">
-                  {post.title}
-						{post.description}
-                </span>
-              </Link>
-              <p className="mt-2 text-black">{post.excerpt}</p>
+             <Link href={`/Posts/${post.id}`}>
+               <div className="text-2xl font-medium text-black hover:text-blue-800">
+                 {post.title}
+               </div>  
+               <p className="text-lg font-light text-gray-600 italic mt-2">
+                 Description
+               </p>
+               <span className="text-base text-gray-500">
+                 {post.description}
+               </span>
+             </Link>
             </div>
           ))}
         </div>
