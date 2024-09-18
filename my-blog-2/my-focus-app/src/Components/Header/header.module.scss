@@ -1,0 +1,28 @@
+.header {
+height: 90px;
+position: absolute;
+width: 100%;
+
+	z-index: 5;
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		padding: 0px 100px;
+	   align-items: center;
+		line-height: 90px;
+	}
+	&__logo {
+
+	}
+	&__items {
+		display: flex;
+		gap: 50px;
+	}
+	&__item {
+		color: azure;
+	}
+	&__item:hover {
+		text-decoration: underline;
+	}
+}

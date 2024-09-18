@@ -1,0 +1,51 @@
+.vinder {
+  &__section {
+	background-color: rgb(43, 43, 43);
+    padding: 50px;
+  }
+
+  &__container {}
+
+  &__content__one {
+  }
+
+  &__items {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  &__image {
+    display: flex;
+    flex: 0 1 60%;
+  }
+
+  &__item {
+    display: flex;
+    flex: 0 1 40%;
+    justify-content: center;
+  }
+
+  &__size {}
+
+  &__size__title {
+    font-size: 32px;
+    font-weight: 900;
+    color: #BBE73E;
+  }
+
+  &__size__info {
+    text-align: start;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+  }
+
+  &__size__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+}

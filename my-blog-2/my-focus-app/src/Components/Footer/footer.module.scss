@@ -1,0 +1,29 @@
+.footer {
+
+
+	&__content {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 129px;
+	}
+	&__image {
+		padding-right: 100px;
+	}
+	&__links {
+		display: flex;
+		gap: 50px;
+	}
+	&__link {
+		font-size: 19px;
+		line-height: 22px;
+		font-weight: 600;
+	}
+	&__info{
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		font-size: 19px;
+		line-height: 23px;
+	}
+}

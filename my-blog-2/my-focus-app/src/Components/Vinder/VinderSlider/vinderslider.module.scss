@@ -1,0 +1,49 @@
+.vinder {
+	&__section {
+	  background-color: rgb(255, 255, 255);
+	  padding: 50px;
+	}
+	&__image {
+
+	}
+	&__name {
+		color: #000000;
+	}
+ 
+	&__content__two {
+	  text-align: center;
+	}
+ 
+	.slider {
+	  position: relative;
+ 
+	  .swiper-slide {
+		 transition: transform 0.3s ease, scale 0.3s ease;
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
+ 
+		 &.swiper-slide-active {
+			transform: scale(1.2);
+		 }
+ 
+		 img {
+			max-width: 100%;
+			height: auto;
+		 }
+ 
+		 p {
+			color: #fff;
+			font-size: 16px;
+			margin-top: 10px;
+		 }
+	  }
+	}
+ 
+	.vidertwo__title {
+	  font-size: 32px;
+	  font-weight: 900;
+	  color: #BBE73E;
+	}
+ }
+ 
