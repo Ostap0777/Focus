@@ -8,7 +8,6 @@ const BlogPostPage = async ({ params }: { params: { id: string } }) => {
   if (!post) {
     return <div className="text-center text-red-600">Error loading post</div>;
   }
-
   return (
     <div className="container mx-auto p-6">
       <div className="flex items-center space-x-4 mb-8">
@@ -34,5 +33,4 @@ const BlogPostPage = async ({ params }: { params: { id: string } }) => {
     </div>
   );
 };
-
 export default BlogPostPage;

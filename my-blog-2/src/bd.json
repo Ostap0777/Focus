@@ -88,6 +88,12 @@
    "title": "Integrating with External APIs in Next.js",
    "description": "How to fetch and display data from external APIs in your Next.js application.",
    "content": "Fetching data from external APIs is a common requirement. This post will cover how to integrate with external APIs in Next.js, including making API requests, handling responses, and displaying data on your pages."
-   }
+   },
+	{
+		"id": "14",
+		"title": "Integrating with External APIs in Next.js",
+		"description": "How to fetch and display data from external APIs in your Next.js application.",
+		"content": "Fetching data from external APIs is a common requirement. This post will cover how to integrate with external APIs in Next.js, including making API requests, handling responses, and displaying data on your pages."
+		}
  ]
  }
